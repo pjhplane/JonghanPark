@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<title> About </title>
+<meta charset="utf-8">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("Project.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title{
+  position: relative;
+  left:60px;
+  top:450px;
+  font-size: 40px;
+  font-weight: bold;
+  width: 1000px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: skyblue;
+}
+
+
+
+.div2 {
+  width: 700px;
+  height: 350px;
+  padding: 100px;
+  border: 5px solid white;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+}
+
+.first-pic{
+  border-radius: 50%;
+  top: 10px;
+  position: relative;
+  display: flex;
+  left:100px;
+  width: 300px;
+  height: 296px;
+}
+
+.first-experience{
+  font-style: oblique;
+  position: absolute;
+  text-decoration: underline;
+  font-size: 27px;
+  left: 650px;
+  width: 850px;
+  top: 120px;
+}
+
+
+</style>
+</head>
+
+<body>
+  <div class="bg">
+    <div class="navbar">
+      <a href="About.html">About Me</a>
+      <a href="Experience.html">Experience</a>
+      <a href="Project.html">Project/Research</a>
+      <a href="Skill.html">Skill</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
+        <div id="main">
+        <div class="nav">
+        </div>
+
+
+          <div class="first-pic"style="top:150px;">
+            <img class="mySlide" src="Web Programming.jpg" height='120%'/>
+
+
+
+          <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 1 seconds
+          }
+          </script>
+        </div>
+        <div class="first-experience">
+          <h1><strong> Web Programming </strong></h1>
+            <div class="title"style="height:0px;top:100px"><h3>I became interested in the coding and
+              I learned html and css by myself to make my own webpages. Github for the website: <a href="https://pjhplane.github.io/JonghanPark/">https://pjhplane.github.io/JonghanPark/</h3></div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="footer">
+  <footer>Jonghan Park @2020</footer>
+</div>
+
+</body>
+
+
+
+</html>
